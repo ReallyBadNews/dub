@@ -15,8 +15,8 @@ export const FRAMER_MOTION_LIST_ITEM_VARIANTS = {
 
 export const HOME_HOSTNAMES = new Set([
   // comment for better diffs
-  "dub.sh",
-  "preview.dub.sh",
+  "dewbie.vercel.app",
+  // "preview.dub.sh",
   "localhost:3000",
 ]);
 
@@ -44,15 +44,15 @@ export const RESERVED_KEYS = new Set([
 ]);
 
 export const DEFAULT_REDIRECTS = {
-  home: "https://dub.sh",
-  signin: "https://app.dub.sh/login",
-  login: "https://app.dub.sh/login",
-  register: "https://app.dub.sh/register",
-  signup: "https://app.dub.sh/register",
-  app: "https://app.dub.sh",
-  dashboard: "https://app.dub.sh",
-  links: "https://app.dub.sh/links",
-  settings: "https://app.dub.sh/settings",
+  home: "https://dewbie.vercel.app",
+  signin: "https://app.dewbie.vercel.app/login",
+  login: "https://app.dewbie.vercel.app/login",
+  register: "https://app.dewbie.vercel.app/register",
+  signup: "https://app.dewbie.vercel.app/register",
+  app: "https://app.dewbie.vercel.app",
+  dashboard: "https://app.dewbie.vercel.app",
+  links: "https://app.dewbie.vercel.app/links",
+  settings: "https://app.dewbie.vercel.app/settings",
 };
 
 export const FREE_PLAN_PROJECT_LIMIT = 5;
