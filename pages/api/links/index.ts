@@ -2,7 +2,7 @@ import { NextApiRequest, NextApiResponse } from "next";
 import { addLink, getLinksForProject } from "@/lib/api/links";
 import { Session, withUserAuth } from "@/lib/auth";
 
-// This is a special route for retrieving and creating custom dub.sh links.
+// This is a special route for retrieving and creating custom dewbie.vercel.app links.
 
 export default withUserAuth(
   async (req: NextApiRequest, res: NextApiResponse, session: Session) => {
@@ -13,7 +13,7 @@ export default withUserAuth(
         sort?: "createdAt" | "clicks";
       };
       const response = await getLinksForProject({
-        domain: "dub.sh",
+        domain: "dewbie.vercel.app",
         status,
         sort,
         userId: session.user.id,
@@ -28,7 +28,7 @@ export default withUserAuth(
       }
       const response = await addLink({
         ...req.body,
-        domain: "dub.sh",
+        domain: "dewbie.vercel.app",
         userId: session.user.id,
       });
 

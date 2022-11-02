@@ -11,11 +11,11 @@ export default async function handler(
   // GET /api/links/[key]/clicks - get clicks for link
   if (req.method === "GET") {
     const { key } = req.query as { key: string };
-    const clicks = await getLinkClicksCount("dub.sh", key);
+    const clicks = await getLinkClicksCount("dewbie.vercel.app", key);
     await prisma.link.update({
       where: {
         domain_key: {
-          domain: "dub.sh",
+          domain: "dewbie.vercel.app",
           key,
         },
       },

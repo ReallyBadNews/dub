@@ -129,7 +129,7 @@ function LinkQRModalHelper({
                     ...(showLogo && {
                       imageSettings: {
                         ...qrData.imageSettings,
-                        src: logo || "https://dub.sh/_static/logo.svg",
+                        src: logo || "https://dewbie.vercel.app/_static/logo.svg",
                       },
                     }),
                   }),

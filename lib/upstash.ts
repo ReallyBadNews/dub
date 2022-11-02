@@ -24,7 +24,7 @@ export async function setRandomKey(
   /* recursively set link till successful */
   const key = nanoid();
   const response = await redis.set(
-    `dub.sh:${key}`,
+    `dewbie:${key}`,
     {
       url,
     },
@@ -38,16 +38,16 @@ export async function setRandomKey(
     return setRandomKey(url);
   } else {
     const pipeline = redis.pipeline();
-    pipeline.zadd(`dub.sh:clicks:${key}`, {
+    pipeline.zadd(`dewbie:clicks:${key}`, {
       score: Date.now(),
       member: {
         geo: LOCALHOST_GEO_DATA,
         ua: "Dub-Bot",
-        referer: "https://dub.sh",
+        referer: "https://dewbie.vercel.app",
         timestamp: Date.now(),
       },
     });
-    pipeline.expire(`dub.sh:clicks:${key}`, 30 * 60); // 30 minutes
+    pipeline.expire(`dewbie:clicks:${key}`, 30 * 60); // 30 minutes
     await pipeline.exec();
     return { response, key };
   }
@@ -86,7 +86,7 @@ export async function getLinksForProject(
   /*
     This function is used to get all links for a project.
 
-    Only applicable for dub.sh:
+    Only applicable for dewbie.vercel.app:
       - If a username is provided, it will only return links for that user.
         Otherwise, it will return all links for the project.
   */

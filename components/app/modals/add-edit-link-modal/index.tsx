@@ -223,7 +223,7 @@ function AddEditLinkModal({
               </div>
               <div className="relative mt-1 flex rounded-md shadow-sm">
                 <span className="inline-flex items-center whitespace-nowrap rounded-l-md border border-r-0 border-gray-300 bg-gray-50 px-5 text-gray-500 sm:text-sm">
-                  {domain || "dub.sh"}
+                  {domain || "dewbie.vercel.app"}
                 </span>
                 <input
                   type="text"
