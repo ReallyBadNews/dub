@@ -35,7 +35,7 @@ export default withUserAuth(
         slugError = "Cannot use reserved slugs";
       }
       const validDomain =
-        validDomainRegex.test(domain) && !domain.endsWith(".dub.sh");
+        validDomainRegex.test(domain) && !domain.endsWith(".dewbie.vercel.app");
       if (slugError || !validDomain) {
         return res.status(422).json({
           slugError,

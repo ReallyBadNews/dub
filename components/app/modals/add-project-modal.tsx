@@ -54,7 +54,7 @@ function AddProjectModalHelper({
   const [debouncedDomain] = useDebounce(domain, 500);
   useEffect(() => {
     if (debouncedDomain.length > 0 && !domainError) {
-      fetch(`/api/projects/dub.sh/domains/${debouncedDomain}/exists`).then(
+      fetch(`/api/projects/dewbie.vercel.app/domains/${debouncedDomain}/exists`).then(
         async (res) => {
           if (res.status === 200) {
             const exists = await res.json();
@@ -156,7 +156,7 @@ function AddProjectModalHelper({
             </label>
             <div className="relative mt-1 flex rounded-md shadow-sm">
               <span className="inline-flex items-center rounded-l-md border border-r-0 border-gray-300 bg-gray-50 px-5 text-gray-500 sm:text-sm">
-                app.dub.sh
+                dewbie.vercel.app
               </span>
               <input
                 name="slug"

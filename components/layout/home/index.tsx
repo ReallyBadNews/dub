@@ -24,7 +24,7 @@ export default function HomeLayout({
           <div className="flex h-16 items-center justify-between">
             <div className="flex items-center">
               {domain ? (
-                <a href="https://dub.sh" target="_blank" rel="noreferrer">
+                <a href="https://dewbie.vercel.app" target="_blank" rel="noreferrer">
                   <Image
                     src="/_static/logotype.svg"
                     alt="Dub.sh logo"
@@ -49,14 +49,14 @@ export default function HomeLayout({
             </div>
             {session ? (
               <a
-                href="https://app.dub.sh"
+                href="https://app.dewbie.vercel.app"
                 className="rounded-full border border-black bg-black py-1.5 px-5 text-sm text-white transition-all hover:bg-white hover:text-black"
               >
                 Dashboard
               </a>
             ) : (
               <a
-                href="https://app.dub.sh/login"
+                href="https://app.dewbie.vercel.app/login"
                 className="rounded-full border border-black bg-black py-1.5 px-5 text-sm text-white transition-all hover:bg-white hover:text-black"
               >
                 Sign in
@@ -72,7 +72,7 @@ export default function HomeLayout({
           <Twitter className="h-6 w-6 text-gray-600" />
         </a>
         {domain ? (
-          <a href="https://dub.sh" target="_blank" rel="noreferrer">
+          <a href="https://dewbie.vercel.app" target="_blank" rel="noreferrer">
             <span className="sr-only">Dub.sh Logo</span>
             <Logo className="h-7 w-7 text-gray-600" />
           </a>

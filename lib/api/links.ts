@@ -109,7 +109,7 @@ export async function getRandomKey(domain: string): Promise<string> {
 
 export async function checkIfKeyExists(domain: string, key: string) {
   if (
-    domain === "dub.sh" &&
+    domain === "dewbie.vercel.app" &&
     (RESERVED_KEYS.has(key) || DEFAULT_REDIRECTS[key])
   ) {
     return true; // reserved keys for dub.sh
@@ -267,7 +267,7 @@ export async function editLink(
     proxy &&
       !changedKey &&
       (await fetch(
-        `https://dub.sh/api/projects/${projectSlug}/domains/${domain}/links/${oldKey}/revalidate?secret=${process.env.REVALIDATE_TOKEN}`,
+        `https://dewbie.vercel.app/api/projects/${projectSlug}/domains/${domain}/links/${oldKey}/revalidate?secret=${process.env.REVALIDATE_TOKEN}`,
       )),
   ]);
   if (uploadedImage) {

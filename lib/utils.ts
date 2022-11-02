@@ -57,7 +57,7 @@ export function nFormatter(num: number, digits?: number) {
 
 export function linkConstructor({
   key,
-  domain = "dub.sh",
+  domain = "dewbie.vercel.app",
   localhost,
   pretty,
   noDomain,

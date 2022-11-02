@@ -86,7 +86,7 @@ const Features = ({ stars }: { stars: number }) => {
               when building your brand. That's why we offer free custom domains
               on all plans.
             </p>
-            <Link href="https://app.dub.sh">
+            <Link href="https://app.dewbie.vercel.app">
               <a className="block max-w-fit rounded-full border border-black bg-black px-4 py-1.5 text-sm text-white transition-all hover:bg-white hover:text-black">
                 Create your project
               </a>
@@ -109,7 +109,7 @@ const Features = ({ stars }: { stars: number }) => {
               That's why we've built a QR code generator right into Dub.
             </p>
             <a
-              href="https://dub.sh/qrcode"
+              href="https://dewbie.vercel.app/qrcode"
               target="_blank"
               rel="noreferrer"
               className="block max-w-fit rounded-full border border-black bg-black px-4 py-1.5 text-sm text-white transition-all hover:bg-white hover:text-black"
@@ -132,7 +132,7 @@ const Features = ({ stars }: { stars: number }) => {
           <div className="flex h-96 w-full max-w-[700px] items-center justify-center rounded-2xl bg-gray-900 shadow-lg">
             <div className="flex items-center">
               <a
-                href="https://github.com/steven-tey/dub"
+                href="https://github.com/ReallyBadNews/dub"
                 target="_blank"
                 rel="noreferrer"
                 className="flex h-10 items-center space-x-2 rounded-md border border-gray-600 bg-gray-800 p-4"

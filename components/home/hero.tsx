@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <div className="mx-auto mt-20 mb-10 max-w-md px-2.5 text-center sm:max-w-lg sm:px-0">
       <a
-        href="https://dub.sh/launch"
+        href="https://dewbie.vercel.app/launch"
         target="_blank"
         rel="noreferrer"
         className="mx-auto flex max-w-fit items-center justify-center space-x-2 overflow-hidden rounded-full bg-blue-100 px-7 py-2 transition-all hover:bg-blue-200"
@@ -29,14 +29,14 @@ const Hero = () => {
       </p>
 
       <div className="mx-auto mt-10 flex max-w-fit space-x-4">
-        <Link href="https://app.dub.sh/register">
+        <Link href="https://app.dewbie.vercel.app/register">
           <a className="rounded-full border border-black bg-black py-2 px-5 text-sm text-white shadow-lg transition-all hover:bg-white hover:text-black">
             Start For Free
           </a>
         </Link>
         <a
           className="flex items-center justify-center space-x-2 rounded-full border border-gray-300 bg-white py-2 px-5 shadow-lg transition-all hover:border-gray-800"
-          href="https://dub.sh/github"
+          href="https://dewbie.vercel.app/github"
           target="_blank"
           rel="noreferrer"
         >

@@ -159,7 +159,7 @@ const getUsage = async (
     where: {
       domain,
       // only for dub.sh, pull data for owner's usage only
-      ...(domain === "dub.sh" && {
+      ...(domain === "dewbie.vercel.app" && {
         userId: process.env.DUB_OWNER_ID,
       }),
     },
